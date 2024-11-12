@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <link href='/style.css' rel='stylesheet'>
+  <style>
+    *{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    body{margin: 0px;}
+    .container{width: 100%;}
+    #tbl{border-collapse: collapse;width: 100%;}
+    #tbl td, #tbl th{border: 1px solid #ddd;padding: 8px;}
+    #tbl tr:hover{background-color: #ddd;}
+    #tbl tr:nth-child(even){background-color: antiquewhite;}
+    #tbl th{padding-top: 12px;padding-bottom: 12px;text-align: center;background-color: bisque;color: black;}
+    #myh1{text-align: center;}
+    .btn{border:none;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;font-size:14px;border-radius:8px;cursor:pointer;}
+    .btngreen{background-color: green;}
+    .btngreen:hover{background-color: white;}
+    .btnred{background-color: red;}
+    .btnred:hover{background-color: white;}
+
+    img{
+      max-width: 100%;
+      /* border: solid 20px #000; */
+      /* border-radius: 50%; */
+      filter: grayscale(1);
+      display:flex;
+
+    }
+
+    img:hover{
+      filter:none;
+    }
+
+    div.foto{
+      border:#ddd;
+      box-shadow: #ddd;
+      background-color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body bgcolor="#e2c9cf">
+  <div class="container">
+    <div class="foto">
+      <img src="img.jpg" style="width: 10%;">
+      <div class="txt">baifern</div>
+    </div>
+    <h1 id="myh1">indah</h1>
+    <table id="tbl">
+      <tr>
+        <th>no</th>
+        <th>nama</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>berlyn</td>
+        <td><span class="btn btngreen">edit</span> <span class="btn btnred">delete</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>gero</td>
+        <td><span class="btn btngreen">edit</span> <span class="btn btnred">delete</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>vera</td>
+        <td><span class="btn btngreen">edit</span> <span class="btn btnred">delete</span></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Diah</td>
+        <td><span class="btn btngreen">edit</span> <span class="btn btnred">delete</span></td>
+      </tr>
+    </table>
+  </div>
+  
+  <script defer type="text/javascript" src="/main.js"></script>
+</body>
+
+</html>
